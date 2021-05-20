@@ -59,6 +59,59 @@ const Notation = () => {
 		const notesMeasure4 = getNotesMeasure([[["f/4"], "2"]]);
 	  
 		Vex.Flow.Formatter.FormatAndDraw(context, staveMeasure4, notesMeasure4);
+
+		const staveMeasure5 = new Vex.Flow.Stave(
+			10,
+			200,
+			300
+		  );
+
+		staveMeasure5.setContext(context).draw();
+
+		const rest = getNotesMeasure([[["b/4"], "qr"]])
+
+		const notesMeasure5 = getNotesMeasure([[["c/4"], "8"], [["d/4"], "8"]]);	  
+	  
+		const beam2 = new Vex.Flow.Beam(notesMeasure5);
+	  
+		VF.Formatter.FormatAndDraw(context, staveMeasure5, rest.concat(notesMeasure5));
+
+		beam2.setContext(context).draw();
+
+		const staveMeasure6 = new Vex.Flow.Stave(
+			staveMeasure1.getWidth() + staveMeasure1.getX(),
+			200,
+			300
+		  );
+		  staveMeasure6.setContext(context).draw();
+  
+		  const notesMeasure6 = getNotesMeasure([[["e/4"], "q"], [["g/4"], "q"]]);
+		
+		  Vex.Flow.Formatter.FormatAndDraw(context, staveMeasure6, notesMeasure6);
+
+		  const staveMeasure7 = new Vex.Flow.Stave(
+			10,
+			300,
+			300
+		  );
+
+		staveMeasure7.setContext(context).draw();
+
+		const notesMeasure7 = getNotesMeasure([[["g/4"], "q"], [["f/4"], "q"]]);
+	  
+		Vex.Flow.Formatter.FormatAndDraw(context, staveMeasure7, notesMeasure7);
+
+		const staveMeasure8 = new Vex.Flow.Stave(
+			staveMeasure1.getWidth() + staveMeasure1.getX(),
+			300,
+			300
+		  );
+
+		staveMeasure8.setContext(context).draw();
+
+		const notesMeasure8 = getNotesMeasure([[["e/4"], "2"]]);
+	  
+		Vex.Flow.Formatter.FormatAndDraw(context, staveMeasure8, notesMeasure8);
 	
 	}, [])
 
