@@ -35,8 +35,7 @@ const Notation = () => {
 	  
 		// measure 2 - juxtaposing second measure next to first measure
 		const staveMeasure2 = new Vex.Flow.Stave(
-			//@ts-ignore
-		  staveMeasure1.width + staveMeasure1.x, // There seem to be an issue with the width and x properties.
+		  staveMeasure1.getWidth() + staveMeasure1.getX(),
 		  0,
 		  400
 		);
