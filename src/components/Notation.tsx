@@ -119,6 +119,7 @@ const Notation = () => {
 			200
 		);
 
+		staveMeasure9.addModifier(new Vex.Flow.Repetition(Vex.Flow.Repetition.type.NONE, 20, 50), Vex.Flow.StaveModifier.Position.LEFT);
 		staveMeasure9.setContext(context).draw();
 
 		const rest2 = getNotesMeasure([[["b/4"], "8r"]])
