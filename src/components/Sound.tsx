@@ -29,7 +29,7 @@ const Sound = () => {
 		
 		synth.triggerAttackRelease("G4", "8n", now + 19.5)
 		synth.triggerAttackRelease("F4", "8n", now + 20)
-		synth.triggerAttackRelease("C4", "8n", now + 20.5)
+		synth.triggerAttackRelease("E4", "8n", now + 20.5)
 
 		synth.triggerAttackRelease("C4", "4n", now + 21)
 		synth.triggerAttackRelease("F4", "4n", now + 22)
